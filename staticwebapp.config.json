@@ -1,0 +1,14 @@
+{
+    "networking": {
+        "allowedIpRanges": ["AzureFrontDoor.Backend"]
+    },
+    
+    "forwardingGateway": {
+        "requiredHeaders": {
+            "X-Azure-FDID" : "e6d3f288-22c9-4a72-ac41-925654a934ca"
+        },
+        "allowedForwardedHosts": [
+            "docs.exflow.cloud"
+        ]
+    }
+}
