@@ -1,0 +1,23 @@
+@media screen and (max-width: 997px)  {
+    h2 {
+        width: 90%
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .office_background > h1 {
+        padding-top: 0px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .links {
+        flex-direction: column;
+        width: 60%;
+    }
+}
