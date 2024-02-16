@@ -1,26 +1,7 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #fdad54;
-  --ifm-color-primary-dark: #fd9d33;
-  --ifm-color-primary-darker: #fc9522;
-  --ifm-color-primary-darkest: #e97c03;
-  --ifm-color-primary-light: #fdbd75;
-  --ifm-color-primary-lighter: #fec586;
-  --ifm-color-primary-lightest: #feddb8;
-  --ifm-background-color: #F8F1EA;
-  --ifm-code-font-size: 100%;
-  --ifm-font-family-base: 'DMSans';
-}
-
 body {
     font-family: "DMSans";
     margin: 0px;
+    background-color: #F8F1EA;
 }
 
 .nectar_shape_divider {
@@ -173,7 +154,8 @@ body h3 {
 }
 body h4 {
   font-family: "Archia";
-  font-weight: 600;
+  font-weight: 400;
+  color: white;
 }
 
 .links {
@@ -198,6 +180,8 @@ a {
     text-decoration: none;
 }
 
+
+
 a:hover {
     color: #df991b;
     text-decoration: underline;
@@ -205,5 +189,16 @@ a:hover {
 }
 
 .office_background > h1 {
-    padding-top: 50px;
+    max-width: 1000px;
+    line-height: 36px;
+    font-size: 50px;
+    color: white;
+}
+
+.office_background > h2 {
+    max-width: 1000px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: white;
 }
