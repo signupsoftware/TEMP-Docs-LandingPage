@@ -45,13 +45,6 @@ body {
     align-items: center;
 }
 
-.front_description {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 36px;
-    max-width: 1000px;
-}
-
 .text-align_center {
     text-align: center;
 }
@@ -186,7 +179,6 @@ a:hover {
 
 .office_background > h1 {
     max-width: 1000px;
-    
     font-size: 50px;
     color: white;
 }
@@ -195,6 +187,5 @@ a:hover {
     max-width: 1000px;
     font-weight: 500;
     font-size: 20px;
-    
     color: white;
 }
