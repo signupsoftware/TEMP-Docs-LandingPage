@@ -181,6 +181,7 @@ a:hover {
     max-width: 1000px;
     font-size: 50px;
     color: white;
+    line-height: 36px;
 }
 
 .office_background > h2 {
@@ -188,4 +189,5 @@ a:hover {
     font-weight: 500;
     font-size: 20px;
     color: white;
+    line-height: 36px;
 }
