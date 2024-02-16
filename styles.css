@@ -1,5 +1,25 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #fdad54;
+  --ifm-color-primary-dark: #fd9d33;
+  --ifm-color-primary-darker: #fc9522;
+  --ifm-color-primary-darkest: #e97c03;
+  --ifm-color-primary-light: #fdbd75;
+  --ifm-color-primary-lighter: #fec586;
+  --ifm-color-primary-lightest: #feddb8;
+  --ifm-background-color: #F8F1EA;
+  --ifm-code-font-size: 100%;
+  --ifm-font-family-base: 'DMSans';
+}
+
 body {
-    font-family: "Roboto";
+    font-family: "DMSans";
     margin: 0px;
 }
 
@@ -55,87 +75,112 @@ body {
     text-align: center;
 }
 
-
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-Thin.ttf) format("truetype");
-    font-weight: 100;
-    font-style: normal;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-Thin.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-Light.ttf) format("truetype");
-    font-weight: 300;
-    font-style: normal;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
-    font-weight: 500;
-    font-style: normal;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-Black.ttf) format("truetype");
-    font-weight: 900;
-    font-style: normal;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-ThinItalic.ttf) format("truetype");
-    font-weight: 100;
-    font-style: italic;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-ThinItalic.ttf) format("truetype");
+  font-weight: 100;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-LightItalic.ttf) format("truetype");
-    font-weight: 300;
-    font-style: italic;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-MediumItalic.ttf) format("truetype");
-    font-weight: 500;
-    font-style: italic;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-MediumItalic.ttf) format("truetype");
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-BoldItalic.ttf) format("truetype");
-    font-weight: 700;
-    font-style: italic;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-BoldItalic.ttf) format("truetype");
+  font-weight: 700;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(/resourses/fonts/Roboto/Roboto-BlackItalic.ttf) format("truetype");
-    font-weight: 900;
-    font-style: italic;
+  font-family: "DMSans";
+  src: url(@site/static/fonts/DMSans/DMSans-BlackItalic.ttf) format("truetype");
+  font-weight: 900;
+  font-style: italic;
 }
 
-h1 {
-    font-weight: 100;
-    font-size: 54px;
+@font-face {
+  font-family: "Archia";
+  src: url(@site/static/fonts/Archia/archia-regular-webfont.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url(@site/static/fonts/Pacifico/Pacifico.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body h1 {
+  font-family: "Archia";
+  font-weight: 500;
+}
+body h2 {
+  font-family: "Archia";
+  font-weight: 600;
+}
+body h3 {
+  font-family: "Archia";
+  font-weight: 600;
+}
+body h4 {
+  font-family: "Archia";
+  font-weight: 600;
 }
 
 .links {
