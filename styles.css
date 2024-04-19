@@ -177,17 +177,8 @@ a:hover {
     transition: color 200ms cubic-bezier(0.08,0.52,0.52,1);
 }
 
-.office_background > h1 {
-    max-width: 1000px;
-    font-size: 50px;
-    color: white;
-    line-height: 36px;
-}
-
-.office_background > h2 {
-    max-width: 1000px;
-    font-weight: 500;
-    font-size: 20px;
-    color: white;
-    line-height: 36px;
+.front_header {
+  max-width: 1000px;
+  line-height: 36px;
+  font-size: 50px;
 }
