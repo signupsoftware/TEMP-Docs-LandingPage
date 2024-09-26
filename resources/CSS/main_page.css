@@ -4,6 +4,19 @@ body {
     background-color: #F8F1EA;
 }
 
+.page-title {
+  text-align: center;
+  font-family: "Archia", sans-serif;
+
+  
+
+  max-width: 1000px;
+  font-size: 50px;
+  color: white;
+  line-height: 36px;
+  padding-top: 150px;
+}
+
 .nectar_shape_divider {
     fill: #F8F1EA;
 }
@@ -33,7 +46,7 @@ body {
 }
 
 .background_wrap {
-    background-image: url("resourses/img/office_graphs.jpg");
+    background-image: url("../img/office_graphs.jpg");
     background-size: cover;
 }
 
@@ -51,84 +64,84 @@ body {
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-Thin.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-Thin.ttf) format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-Light.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-Light.ttf) format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-Regular.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-Medium.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-Bold.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-Black.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-Black.ttf) format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-ThinItalic.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-ThinItalic.ttf) format("truetype");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-LightItalic.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-LightItalic.ttf) format("truetype");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-MediumItalic.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-MediumItalic.ttf) format("truetype");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-BoldItalic.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-BoldItalic.ttf) format("truetype");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "DMSans";
-  src: url(/resourses/fonts/DMSans/DMSans-BlackItalic.ttf) format("truetype");
+  src: url(/resources/fonts/DMSans/DMSans-BlackItalic.ttf) format("truetype");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Archia";
-  src: url(/resourses/fonts/Archia/archia-regular-webfont.ttf) format("truetype");
+  src: url(/resources/fonts/Archia/archia-regular-webfont.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }

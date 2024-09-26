@@ -1,0 +1,54 @@
+
+.background-image {
+  /* background-image: url("resources/img/Hero_BC 1.png"); */
+  background-image: url("../img/Hero_homepage 1.png");
+  background-size: cover;
+  /*height: 100vh;*/
+}
+
+.main-container {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.main-title {
+  padding-top: 20px; 
+  padding-bottom: 50px;
+  color: #333335;
+  font-family: 'Archia', sans-serif;
+  font-size: 32pt;
+}
+
+.menu-item {
+  width: fit-content;
+  height: 40px;
+  background-color: #FDAD54; 
+  border-radius: 10px;
+  margin-top: 15px;
+  align-content: center;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-family: 'Archia', sans-serif;
+  font-size: 13pt;
+}
+.menu-item:hover {
+  background-color: #FFC48C;
+}
+
+.menu-item-link {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/*
+
+*/
