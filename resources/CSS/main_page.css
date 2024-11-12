@@ -197,3 +197,118 @@ a:hover {
     line-height: 36px;
     padding-top: 150px;
 }
+
+
+
+/* Agreement documents, delete these if not used in final */
+:root {
+  --font-size-normal-text: 14pt;
+  --font-size-normal-header: 18pt;
+  --font-size-big-header: 20pt;
+  --font-family-document: 'Times New Roman', Times, serif;
+}
+
+.agreement-doc {
+  width: 60%;  
+}
+.agreement-doc h3 {
+  /*font-family: 'Times New Roman', Times, serif;*/
+  font-family: var(--font-family-document);
+  font-size: var(--font-size-normal-header);
+} 
+.agreement-doc ul {
+  font-family: var(--font-family-document);
+  font-size: var(--font-size-normal-text);
+  line-height: normal;
+} 
+.agreement-doc ul li {
+  font-family: var(--font-family-document);
+  font-size: var(--font-size-normal-text);
+  margin: 10px;
+  padding: 0px;
+  color: black;
+} 
+.agreement-doc p {
+  font-family: var(--font-family-document);
+  font-size: var(--font-size-normal-text);
+  line-height: normal;
+} 
+.agreement-doc h4  {
+  font-family: var(--font-family-document);
+  font-size: var(--font-size-normal-header);
+} 
+.paragraph {
+  white-space: nowrap;
+}
+.paragraph h4{
+  font-family: var(--font-family-document);
+  font-size: var(--font-size-normal-header);
+}
+.paragraph h3{
+  font-family: var(--font-family-document);
+  font-size: var(--font-size-normal-header);
+}
+.paragraph-big h1 {
+  font-family: var(--font-family-document);
+  font-size: var(--font-size-big-header);
+}
+.paragraph-big h2 {
+  font-family: var(--font-family-document);
+  font-size: var(--font-size-big-header);
+}
+.paragraph-text {  
+  font-family: var(--font-family-document);
+  font-size: var(--font-size-normal-text);
+  margin-left: 20px;
+  font-weight: normal;
+  display: inline-block;
+  white-space: break-spaces;
+  vertical-align: top;
+
+}
+
+[data-theme='light'] .agreement-doc img {
+  width: 250px;
+  height: 111px;
+  background-image: url("/static/img/signup_logo_black.png");
+}
+[data-theme='dark'] .agreement-doc img {
+  width: 250px;
+  height: 111px;
+  background-image: url("/static/img/signup_logo.png");
+}
+
+.agreement-table table {
+  width: 800px !important;
+  border-spacing: 0;
+  margin-top: 20px;
+  
+  border-collapse: collapse;
+  border-style : hidden !important;
+  border-spacing: 0 !important;  
+  border: none;
+}
+.agreement-table table th {
+  display: none;
+  border-top: none;
+  border-bottom: none;
+  border: none;
+  border-collapse: collapse;
+}
+.agreement-table table tr td {
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 30px;
+
+  border-collapse: collapse;
+  border-style : hidden !important;
+  border-spacing: 0 !important;  
+  border: none;
+}
+.agreement-table img {
+  width: 32px;
+  height: 32px;
+}
+/* END Agreement documents, delete these if not used in final */
+
+
