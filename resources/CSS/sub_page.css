@@ -1,9 +1,17 @@
 
 .background-image {
-  /* background-image: url("resources/img/Hero_BC 1.png"); */
+
   background-image: url("../img/Hero_Homepage_1.png");
   background-size: cover;
-  /*height: 100vh;*/
+  background-repeat: no-repeat;
+  background-color: #CEC9BF;
+  /*background-image: linear-gradient(to right, #B0BFBF, #EBD1B9), url("../img/Hero_Homepage_1.png");*/
+
+  /*background-color: linear-gradient(to right, #B0BFBF, #EBD1B9);*/
+
+  /*height: 100vh;
+  B0BFBF  EBD1B9
+  */
 }
 
 .main-container {
@@ -20,20 +28,46 @@
   font-family: 'Archia', sans-serif;
   font-size: 32pt;
 }
+.menu-container {
+
+  flex-wrap: wrap;
+  align-items: start;
+  /*
+  align-content: start;
+  justify-content: left;
+  text-align: left;
+  */
+  /*width: 100%;*/
+  width: fit-content;
+}
 
 .menu-item {
+  /*margin: 0 auto;*/
+  margin-top: 22px;
+  text-align: left;
+
   width: fit-content;
-  height: 40px;
+  height: 55px;
+  font-size: 15pt;
+
   background-color: #FDAD54; 
   border-radius: 10px;
-  margin-top: 15px;
   align-content: center;
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
 
+  padding-left: 20px;
+  padding-right: 25px;
   font-family: 'Archia', sans-serif;
-  font-size: 13pt;
+    
+  
+  transform: scale(0.0);
+  transform-origin: top left;
+  -webkit-animation: animateThis 1s ease-in;
+  animation: animateThis 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  
 }
 .menu-item:hover {
   background-color: #FFC48C;
@@ -42,6 +76,24 @@
 .menu-item-link {
   color: black;
   text-decoration: none;
+}
+
+@-webkit-keyframes animateThis {
+  0% {
+    transform: scale(0.0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animateThis {
+  0% {
+    transform: scale(0.0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 
