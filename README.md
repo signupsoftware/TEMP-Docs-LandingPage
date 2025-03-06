@@ -12,7 +12,7 @@ GitHub:
 https://github.com/signupsoftware/Docs-Products
 
 Website:
-https://thankful-water-06a6c0b03.5.azurestaticapps.net/
+https://lively-flower-064383f03.4.azurestaticapps.net/
 ```
 
 The site itself is not directly visible to users; instead, other sites fetch pages from it and display them within an `<iframe>`. The **Products** repository/site is a separate Docusaurus application.
@@ -35,14 +35,15 @@ To create a new page shortcut, follow these steps:
         <title>SignUp Software AB</title>    
     </head>
     <body class="background-image">
-        <iframe src="https://thankful-water-06a6c0b03.5.azurestaticapps.net/Agreements?lang=none" width="100%" height="100%" title="SignUp Software Agreements"></iframe>
+        <iframe src="https://lively-flower-064383f03.4.azurestaticapps.net/Agreements?lang=none" width="100%" height="100%" title="SignUp Software Agreements"></iframe>
+<!--        <iframe src="https://thankful-ZZZwater-06a6c0b03.5.azurestaticapps.net/Agreements?lang=none" width="100%" height="100%" title="SignUp Software Agreements"></iframe> -->
     </body>
     </html>
     ```
 
 3. Adjust the `<iframe>` `src` attribute to link to the target page in the **Products** site. For example:
     ```html
-    <iframe src="https://thankful-water-06a6c0b03.5.azurestaticapps.net/Agreements?lang=none" width="100%" height="100%" title="SignUp Software Agreements"></iframe>
+    <iframe src="https://lively-flower-064383f03.4.azurestaticapps.net/Agreements?lang=none" width="100%" height="100%" title="SignUp Software Agreements"></iframe>
     ```
 
 ### Adding Arguments
