@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>Proxy Docs</title>
+    <link rel="stylesheet" href="resources/CSS/proxy_page.css">
+    <script>
+
+        // The new table have multiple rows, so we need to get the text from the clicked row
+        function copyLink() {
+            // Get the clicked row
+            var row = event.target.closest('tr');
+            
+            // Get the text to copy from the middle-column td element of the clicked row
+            //var textToCopy = row.querySelector('.middle-column').innerHTML;
+            // Copy the content of the href link instedad of the text
+            var textToCopy = row.querySelector('.middle-column').innerText;
+            
+            // Create a temporary textarea element to hold the text
+            var tempInput = document.createElement('textarea');
+            var tmpVal = "https://docs.exflow.cloud" + textToCopy;
+            console.log(">>> tmpVal: " + tmpVal);
+            tempInput.value = tmpVal;
+            document.body.appendChild(tempInput);
+            
+            // Select and copy the text
+            tempInput.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary textarea element
+            document.body.removeChild(tempInput);
+            
+            // Show a small popup bubble for 2 seconds
+            var popupBubble = document.createElement('div');
+            popupBubble.className = 'popup-bubble';
+            popupBubble.innerHTML = 'Link copied!';
+            document.body.appendChild(popupBubble);
+            
+            setTimeout(function() {
+                document.body.removeChild(popupBubble);
+            }, 2000);
+        }
+        
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .copy-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        .video-table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        /* Make the table columns left-aligned */
+        .left-column, .middle-column, .right-column {
+            text-align: left;
+            padding: 8px;
+        }
+        /* Make odd rows a different color */
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        /* Make even rows a different color */
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        /* Style the table header */
+        th {
+            background-color: #200d9f;
+            color: white;
+            padding: 10px;
+        }
+        /* Style the table cells */
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        /* Style the popup bubble */
+        .popup-bubble {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;
+            animation: fadeInOut 2s forwards;
+        }
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        /* Style the table header */
+        /*
+        th {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px;
+        }
+            */
+        /* Style the table cells */
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+
+</head>
+<body>
+    <table class="video-table">
+        <head>
+            <tr>
+                <th class="left-column">Video Name</th>
+                <th class="middle-column">Video Path</th>
+                <th class="right-column">Action</th>
+            </tr>            
+        </head>
+        <tr>
+            <td class="left-column">Config ExFlow AP</td>
+            <td class="middle-column"><a href="/videos/FO/config_exflow_ap.mp4">videos/FO/config_exflow_ap.mp4</a></td>
+            <td class="right-column"><div class="copy-button" onclick="copyLink()">Copy link</div></td>
+        </tr>
+        <tr>
+            <td class="left-column">Demo VSR </td>
+            <!-- Change the content of the middle column to a link to the file -->
+            <!--<td class="middle-column">videos/FO/demo_vsr.mp4</td> -->
+
+            <td class="middle-column"><a href="/videos/FO/Demo_VSR.mp4">videos/FO/Demo_VSR.mp4</a></td>
+            <td class="right-column"><div class="copy-button" onclick="copyLink()">Copy link</div></td>
+        </tr>
+        <tr>
+            <td class="left-column">Dimension Ranges</td>
+            <td class="middle-column"><a href="/videos/FO/dimension_ranges.mp4">/videos/FO/dimension_ranges.mp4</a></td>
+            <td class="right-column"><div class="copy-button" onclick="copyLink()">Copy link</div></td>
+        </tr>
+        <tr>
+            <td class="left-column">ExFlow AP Process Demo</td>
+            <td class="middle-column"><a href="/videos/FO/Exflow_ap_process_demo.mp4">/videos/FO/Exflow_ap_process_demo.mp4</a></td>
+            <td class="right-column"><div class="copy-button" onclick="copyLink()">Copy link</div></td>
+        </tr>
+        <tr>
+            <td class="left-column">Global Reference</td>
+            <td class="middle-column"><a href="/videos/FO/global_reference.mp4">/videos/FO/global_reference.mp4</a></td>
+            <td class="right-column"><div class="copy-button" onclick="copyLink()">Copy link</div></td>
+        </tr>
+        <tr>
+            <td class="left-column">Import Coding from Excel</td>
+            <td class="middle-column"><a href="/videos/FO/Import_Coding_From_Excel.mp4">/videos/FO/Import_Coding_From_Excel.mp4</a></td>
+            <td class="right-column"><div class="copy-button" onclick="copyLink()">Copy link</div></td>
+        </tr>
+        <tr>
+            <td class="left-column">Post Control Demo</td>
+            <td class="middle-column"><a href="/videos/FO/Post_control_demo.mp4">/videos/FO/Post_control_demo.mp4</a></td>
+            <td class="right-column"><div class="copy-button" onclick="copyLink()">Copy link</div></td>
+        </tr>
+        <tr>
+            <td class="left-column">Post Control Setup</td>
+            <td class="middle-column"><a href="/videos/FO/Post_control_setup.mp4">/videos/FO/Post_control_setup.mp4</a></td>
+            <td class="right-column"><div class="copy-button" onclick="copyLink()">Copy link</div></td>
+        </tr>
+        <tr>
+            <td class="left-column">Posting Proposals</td>
+            <td class="middle-column"><a href="/videos/FO/postingproposals.mp4">/videos/FO/postingproposals.mp4</a></td>
+            <td class="right-column"><div class="copy-button" onclick="copyLink()">Copy link</div></td>
+        </tr>
+    </table>
+
+</body>
+</html>
