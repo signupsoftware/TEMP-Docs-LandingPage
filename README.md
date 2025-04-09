@@ -1,7 +1,7 @@
 ## Overview
 
 This document serves as the main landing page for the following documentation sites:
-- [ExFlow Documentation](https://docs.exflow.cloud)
+- [ExFlow Documentation](https://docs.signupsoftware.com)
 - [SignUp Software Documentation](https://docs.signupsoftware.com)
 
 It provides a starting point for all product manuals and other documents such as "Terms of Agreements" and "Statement of Work". These pages can be accessed using the main menu defined in `/index.html`.
