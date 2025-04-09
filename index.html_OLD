@@ -38,25 +38,25 @@
         <div class="menu-container">
         <div class="links">
             <div class="link text-align_center">
-                <a href="https://docs.exflow.cloud/finance-operations">
+                <a href="https://docs.signupsoftware.com/finance-operations">
                     <img class="link-img" src="/resources/img/FO.jpg">
                     <h4>ExFlow for Finance and Operations</h4>
                 </a>
             </div>
             <div class="link text-align_center">
-                <a href="https://docs.exflow.cloud/business-central">
+                <a href="https://docs.signupsoftware.com/business-central">
                     <img class="link-img" src="/resources/img/BC.jpg">
                     <h4>ExFlow for Business Central</h4>
                 </a>
             </div>
             <div class="link text-align_center">
-                <a href="https://docs.exflow.cloud/web">
+                <a href="https://docs.signupsoftware.com/web">
                     <img class="link-img" src="/resources/img/WEB.jpg">
                     <h4>ExFlow Approval Web</h4>
                 </a>
             </div>
             <div class="link text-align_center">
-                <a href="https://docs.exflow.cloud/datacapture">
+                <a href="https://docs.signupsoftware.com/datacapture">
                     <img class="link-img" src="/resources/img/EDC.jpg">
                     <h4>ExFlow Data Capture</h4>
                 </a>
