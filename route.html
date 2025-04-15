@@ -1,0 +1,67 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        // Wait for the DOM to load
+        document.addEventListener("DOMContentLoaded", function() {
+            main();
+        });
+
+        function main() {
+
+            // if (window.location.href.startsWith("https://lively-flower-064383f03.4.azurestaticapps.net/d/")) {
+            //     var baseUrl = window.location.href.replace("https://lively-flower-064383f03.4.azurestaticapps.net/d/", "");
+            //     window.location.href = "https://docs.signupsoftware.com/" + baseUrl;
+            // }            
+
+            // if (window.location.href.startsWith("http://localhost:3000/d/")) {
+            //     var subUrl = window.location.href.replace("http://localhost:3000/d/", "");
+            //     window.location.href = "https://docs.signupsoftware.com/" + subUrl;
+            // }            
+
+            const searchParams = new URLSearchParams(window.location.search);
+            const redirectUrl = searchParams.get('path');
+            const iframe = document.getElementById("myframe");
+            const src = "https://lively-flower-064383f03.4.azurestaticapps.net/" + redirectUrl;
+            iframe.src = src;
+
+            // if (redirectUrl) {
+            //     // Redirect to the specified URL
+            //     window.location.href = "https://lively-flower-064383f03.4.azurestaticapps.net/" + redirectUrl;
+            // } else {
+            //     // Handle the case where 'path' is not provided in the URL
+            //     console.error("No 'path' parameter found in the URL.");
+            // }
+        }
+
+
+    </script>
+    <style>
+        /* Make the iframe cover the entire page */
+        #myframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 98%;
+            height: 100%;
+            border: none;
+        }
+
+    </style>
+<head>
+<body>
+    <iframe src="" id="myframe"></iframe>
+</body>
+<html>
+
+        
+        
+
+

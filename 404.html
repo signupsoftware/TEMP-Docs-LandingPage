@@ -7,24 +7,17 @@
     <script>
         
         document.addEventListener("DOMContentLoaded", function() {
-            // Redirect to the homepage after 5 seconds
-            // setTimeout(function() {
-            //     window.location.href = "/";
-            // }, 5000);
-
-            // Log the current browser URL to console
             console.log("Current URL: " + window.location.href);
-            // Remove "https://docs.signupsoftware.com/d/" from url, save the rest in var subdom
             var path = window.location.href.replace("https://docs.signupsoftware.com/d/", "");
-            // Log the subdomain to console
             console.log("Subdomain: " + path);
-            // Check if the subdomain is empty or not
             if (path === "") {
                 console.log("Subdomain is empty");
             } else {
                 console.log("Subdomain is not empty: " + path);
             }
-            
+            // redirect to route.html with the path as a query parameter
+            var redirectUrl = "route.html?path=" + path;            
+            window.location.href = redirectUrl;            
         });
 
     </script>
