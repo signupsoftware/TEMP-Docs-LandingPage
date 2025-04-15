@@ -27,16 +27,16 @@
             // }            
 
             const searchParams = new URLSearchParams(window.location.search);
-            const redirectUrl = searchParams.get('path');            
-            const src = "https://lively-flower-064383f03.4.azurestaticapps.net/" + redirectUrl;
+            const path = searchParams.get('path');            
+            const src = "https://lively-flower-064383f03.4.azurestaticapps.net/" + path;
             // Log everything to the console for debugging
             console.log("Route> Current URL: " + window.location.href);
-            console.log("Route> Redirect URL: " + redirectUrl);
-            console.log("Route> Source URL: " + src);
+            console.log("Route> path: " + path);
+            console.log("Route> src: " + src);
 
 
             setTimeout(function() {
-                redirectURL(path);
+                redirectURL(src);
             }, 1000); 
 
             
