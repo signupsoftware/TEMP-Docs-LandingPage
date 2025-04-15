@@ -34,26 +34,19 @@
             console.log("Route> path: " + path);
             console.log("Route> src: " + src);
 
-
-            setTimeout(function() {
-                redirectURL(src);
-            }, 1000); 
-
-            
-
-            // if (redirectUrl) {
-            //     // Redirect to the specified URL
-            //     window.location.href = "https://lively-flower-064383f03.4.azurestaticapps.net/" + redirectUrl;
-            // } else {
-            //     // Handle the case where 'path' is not provided in the URL
-            //     console.error("No 'path' parameter found in the URL.");
-            // }
-        }
-
-        function redirectURL(path) {
-            const iframe = document.getElementById("myframe");
+            var iframe = document.getElementById("myframe");
             iframe.src = src;
+
+            //setTimeout(function() {
+            //redirectURL(src);
+            //}, 1000); 
+
         }
+
+        // function redirectURL(path) {
+        //     const iframe = document.getElementById("myframe");
+        //     iframe.src = src;
+        // }
 
     </script>
     <style>
