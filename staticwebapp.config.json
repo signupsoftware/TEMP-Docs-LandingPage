@@ -10,5 +10,14 @@
         "allowedForwardedHosts": [
             "docs.signupsoftware.com"
         ]
-    }
+    },
+
+
+    "routes": [
+        {
+            "route": "/d/*",
+            "rewrite": "/404.html"
+        }
+    ]
+
 }
