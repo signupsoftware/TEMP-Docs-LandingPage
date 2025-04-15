@@ -15,10 +15,17 @@
             } else {
                 console.log("Subdomain is not empty: " + path);
             }
-            // redirect to route.html with the path as a query parameter
-            var redirectUrl = "route.html?path=" + path;            
-            window.location.href = redirectUrl;            
+            // Wait a second, then call redirectURL() with "path" as argument
+            setTimeout(function() {
+                redirectURL(path);
+            }, 1000); 
         });
+
+        function redirectURL(path) {
+            var redirectUrl = "/route.html?path=" + path;            
+            window.location.href = redirectUrl;            
+        }
+
 
     </script>
     <style>
